@@ -1,0 +1,25 @@
+{
+  "name": "finalprojectfe",
+  "version": "1.0.0",
+  "description": "Final Project | E-commerce ",
+  "main": "index.js",
+  "scripts": {
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oanagrecu/FinalProjectFE.git"
+  },
+  "keywords": [
+    "FrontEnd",
+    "|Scoala",
+    "Informala",
+    "|"
+  ],
+  "author": "Grecu Oana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oanagrecu/FinalProjectFE/issues"
+  },
+  "homepage": "https://github.com/oanagrecu/FinalProjectFE#readme"
+}
