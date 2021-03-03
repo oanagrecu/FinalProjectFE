@@ -1,0 +1,2 @@
+# FinalProjectFE
+Online ecommerce platform
