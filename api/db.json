@@ -1,0 +1,358 @@
+{
+	"product": [
+		{
+			"id": 1,
+			"title": "Vistan 4383",
+			"price": 420,
+			"description": "Model de dama, elegant, fabricat in Germania din otel.",
+			"category": "rama ochelari",
+			"image": "products/ochelari1",
+			"produse din stoc":10
+		},
+		{
+			"id": 2,
+			"title": "Vistan 4381 ",
+			"price": 420,
+			"description": "Model unisex fabricat in Germania din acetat.",
+			"category": "rama ochelari",
+			"image": "products/ochelari2",
+			"produse din stoc":15
+		},
+		{
+			"id": 3,
+			"title": "Roy Robson",
+			"price": 440,
+			"description": "Model barbatesc fabricat in Germania din flextan.",
+			"category": "rama ochelari",
+			"image": "products/ochelari3",
+			"produse din stoc":10
+		},
+		{
+			"id": 4,
+			"title": "Roy Robson",
+			"price": 240,
+			"description": "Model unisex, fabricat in Elvetia, de calitate superioara",
+			"category":"rama ochelari",
+			"image": "products/ochelari4",
+			"produse din stoc":10
+		},
+		{
+			"id": 5,
+			"title": "Optix 17",
+			"price": 240,
+			"description": "Model barbatesc, fabricat in Germania din titan.",
+			"category": "rama ochelari",
+			"image": "products/ochelari5",
+			"produse din stoc":10
+		},
+		{
+			"id": 6,
+			"title": "Optix 4",
+			"price": 240,
+			"description": "Model unisex, pe culoare verde cu maro, fabricat in Germania din flextan. ",
+			"category": "rama ochelari",
+			"image": "products/ochelari6",
+			"produse din stoc":10
+		},
+		{
+			"id": 7,
+			"title": "Optix 20",
+			"price": 240,
+			"description": "Model feminin, fabricat in Germania din titan.",
+			"category": "rama ochelari",
+			"image": "products/ochelari7",
+			"produse din stoc":15
+		},
+		{
+			"id": 8,
+			"title": "Optix 8",
+			"price": 240,
+			"description": "Model unisex, fabricat in Elvetia, de calitate superioara",
+			"category": "rama ochelari",
+			"image": "products/ochelari8",
+			"produse din stoc":20
+		},
+		{
+			"id": 9,
+			"title": "Roy Robson",
+			"price": 240,
+			"description": "Model unisex, fabricat in Elvetia, de calitate superioara",
+			"category": "rama ochelari",
+			"image": "products/ochelari9",
+			"produse din stoc":20
+		},
+		{
+			"id": 10,
+			"title": "Optix 10",
+			"price": 240,
+			"description": "Model unisex, fabricat in Elvetia, de calitate superioara",
+			"category": "rama ochelari",
+			"image": "products/ochelari10",
+			"produse din stoc":15
+		},
+		{
+			"id": 11,
+			"title": "Optix 11",
+			"price": 240,
+			"description": "Model unisex, fabricat in Elvetia, de calitate superioara",
+			"category": "rama ochelari",
+			"image": "products/ochelari11",
+			"produse din stoc":10
+		},
+		{
+			"id": 12,
+			"title": "Optix 12",
+			"price": 240,
+			"description": "Model unisex, fabricat in Elvetia, de calitate superioara.",
+			"category": "rama ochelari",
+			"image": "products/ochelari12",
+			"produse din stoc":20
+		},
+		{
+			"id": 13,
+			"title": "Optix 13",
+			"price": 350,
+			"description": "Model 10019 - barbatesc, fabricat din otel",
+			"category": "rama ochelari",
+			"image": "products/ochelari13",
+			"produse din stoc":10
+		},
+		{
+			"id": 14,
+			"title": "Optix 6 ",
+			"price": 390,
+			"description": "Model barbatesc, fabricat in Germania din titan",
+			"category": "rama ochelari",
+			"image": "products/ochelari14",
+			"produse din stoc":10
+		},
+		{
+			"id": 15,
+			"title": "Optix 15",
+			"price": 440,
+			"description":"Model 40005 - barbatesc, fabricat din titan + carbon",
+			"category": "rama ochelari",
+			"image": "products/ochelari15",
+			"produse din stoc":15
+		},
+		{
+			"id": 16,
+			"title": "Optix 16",
+			"price": 440,
+			"description": "Model barbatesc, fabricat in Germania din titan.",
+			"category": "rama ochelari",
+			"image": "products/ochelari16",
+			"produse din stoc":15
+		},
+		{
+			"id": 17,
+			"title": "Optix 21",
+			"price": 320,
+			"description": "Model de dama, elegant, fabricat in Germania din otel.",
+			"category": "rama ochelari",
+			"image": "products/ochelari17",
+			"produse din stoc":20
+		},
+		{
+			"id": 18,
+			"title": "Vistan 4379",
+			"price": 420,
+			"description": "Model 10019 - barbatesc, fabricat din otel",
+			"category": "rama ochelari",
+			"image": "products/ochelari18",
+			"produse din stoc":10
+		},
+		{
+			"id": 19,
+			"title": "Roy Robson",
+			"price": 390,
+			"description": "Model barbatesc, fabricat in Germania din titan",
+			"category": "rama ochelari",
+			"image": "products/ochelari19",
+			"produse din stoc":15
+		},
+		{
+			"id": 20,
+			"title": "Vistan 1710",
+			"price": 300,
+			"description": "Model unisex, clasic, fabricat in Germania din acetat si otel",
+			"category": "rama ochelari",
+			"image": "products/ochelari20",
+			"produse din stoc":20
+		},
+		{
+			"id": 21,
+			"title": "Vistan 4383",
+			"price": 320,
+			"description": "Model de dama, elegant, fabricat in Germania din otel.",
+			"category": "rama ochelari",
+			"image": "products/ochelari21",
+			"produse din stoc":20
+		},
+		{
+			"id": 22,
+			"title": "Vistan 4381 ",
+			"price": 420,
+			"description": "Model unisex fabricat in Germania din acetat.",
+			"category": "rama ochelari",
+			"image": "products/ochelari22",
+			"produse din stoc":10
+		},
+		{
+			"id": 23,
+			"title": "Roy Robson",
+			"price": 440,
+			"description": "Model barbatesc fabricat in Germania din flextan.",
+			"category": "rama ochelari",
+			"image": "products/ochelari23",
+			"produse din stoc":10
+		},
+		{
+			"id": 24,
+			"title": "Roy Robson",
+			"price": 240,
+			"description": "Model unisex, fabricat in Elvetia, de calitate superioara",
+			"category":"rama ochelari",
+			"image": "products/ochelari24",
+			"produse din stoc":15
+		},
+		{
+			"id": 25,
+			"title": "Optix 1",
+			"price": 240,
+			"description": "Model barbatesc, fabricat in Germania din titan.",
+			"category": "rama ochelari",
+			"image": "products/ochelari25",
+			"produse din stoc":15
+			
+		},
+		{
+			"id": 26,
+			"title": "Optix 33",
+			"price": 240,
+			"description": "Model feminin, rezistent si robust din titan.",
+			"category": "rama ochelari",
+			"image": "products/ochelari26",
+			"produse din stoc":15
+		},
+		{
+			"id": 27,
+			"title": "Optix 5",
+			"price": 150,
+			"description": "Model feminin, fabricat in Germania din titan.",
+			"category": "rama ochelari",
+			"image": "products/ochelari27",
+			"produse din stoc":20
+		},
+		{
+			"id": 28,
+			"title": "Vistan 4212",
+			"price": 340,
+			"description": "Model de dama, elegant, fabricat in Germania din titan.",
+			"category": "rama ochelari",
+			"image": "products/ochelari28",
+			"produse din stoc":10
+
+		},
+		{
+			"id": 29,
+			"title": "Vistan 1527-C3",
+			"price": 336,
+			"description": "Model unisex, fabricat in Elvetia, de calitate superioara",
+			"category": "rama ochelari",
+			"image": "products/ochelari29",
+			"produse din stoc":10
+
+		},
+		{
+			"id": 30,
+			"title": "Montana2",
+			"price": 150,
+			"description": "Rame din acetat, lentile polarizate, create in Elvetia.Cel mai important rol il reprezinta protectia impotriva razelor ultraviolete.",
+			"category": "ochelari de soare",
+			"image": "products/soare1",
+			"produse din stoc":15
+		},
+		{
+			"id": 31,
+			"title": "Montana4",
+			"price": 150,
+			"description": "Rame din acetat, lentile polarizate, create in Elvetia.Cel mai important rol il reprezinta protectia impotriva razelor ultraviolete.",
+			"category": "ochelari de soare",
+			"image": "products/soare2",
+			"produse din stoc":10
+		},
+		{
+			"id": 32,
+			"title": "Montana6",
+			"price": 150,
+			"description": "Rame din acetat, lentile polarizate, create in Elvetia. Cel mai important rol il reprezinta protectia impotriva razelor ultraviolete.",
+			"category": "ochelari de soare",
+			"image": "products/soare3",
+			"produse din stoc":10
+		},
+		{
+			"id": 33,
+			"title": "Montana7",
+			"price": 150,
+			"description": "Rame din acetat, lentile polarizate, create in Elvetia. Se pot utiliza in diferite domenii si pot fi impartiti in mai multe categorii in functie de necesitate.",
+			"category": "ochelari de soare",
+			"image": "products/soare4",
+			"produse din stoc":20
+		},
+		{
+			"id": 34,
+			"title": "Montana8",
+			"price": 150,
+			"description": "Rame din acetat, lentile polarizate, create in Elvetia. Se pot utiliza in diferite domenii si pot fi impartiti in mai multe categorii in functie de necesitate.",
+			"category": "ochelari de soare",
+			"image": "products/soare5",
+			"produse din stoc":10
+		},
+		{
+			"id": 35,
+			"title": "Ray-Ban",
+			"price": 350,
+			"description": "Rame din acetat, lentile polarizate, create in Elvetia",
+			"category": "ochelari de soare",
+			"image": "products/soare6",
+			"produse din stoc":15
+		},
+		{
+			"id": 36,
+			"title": "Zeiss",
+			"price": 250,
+			"description": "Rame din acetat, lentile polarizate, create in Elvetia. Produse moderne, elegante pentru protetia ochilor.",
+			"category": "ochelari de soare",
+			"image": "products/soare7",
+			"produse din stoc":15
+		},
+		{
+			"id": 37,
+			"title": "essilor",
+			"price": 150,
+			"description": "Rame din acetat, lentile polarizate, create in Elvetia. Produse moderne, elegante pentru protetia ochilor.",
+			"category": "ochelari de soare",
+			"image": "products/soare8",
+			"produse din stoc":20
+		},
+		{
+			"id": 38,
+			"title": "Zeiss",
+			"price": 250,
+			"description": "Rame din acetat, lentile polarizate, create in Elvetia",
+			"category": "ochelari de soare",
+			"image": "products/soare9",
+			"produse din stoc":10
+		},
+		{
+			"id": 39,
+			"title": "Ray-Ban",
+			"price": 150,
+			"description": "Rame din acetat, lentile polarizate, create in Elvetia. Produse moderne, elegante pentru protetia ochilor.",
+			"category": "ochelari de soare",
+			"image": "products/soare10",
+			"produse din stoc":15
+		}
+	]
+}

@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "Final Project | E-commerce ",
   "main": "index.js",
-  "scripts": {
-    
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/oanagrecu/FinalProjectFE.git"
@@ -21,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/oanagrecu/FinalProjectFE/issues"
   },
-  "homepage": "https://github.com/oanagrecu/FinalProjectFE#readme"
+  "homepage": "https://github.com/oanagrecu/FinalProjectFE#readme",
+  "dependencies": {
+    "json-server": "^0.16.3"
+  }
 }
