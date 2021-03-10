@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <title>Document</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootswatch/dist/darkly/bootstrap.min.css">
+    <title>MARA OPTIC</title>
     <link rel="stylesheet" href="src/style.css">
 </head>
 
 <body>
-
     <nav class="nav">
         <div class="container">
             <div class="logo">
-                <a href="index.html" class="logo"><img src="products/maralogo.png" width="150px" height="80px"></a>
+                <a href="index.html" class="logo">MARA OPTIC</a>
             </div>
             <div id="mainListDiv" class="main_list">
                 <ul class="navlinks">
-                    <li><a href="index.html">SERVICII</a></li>
+                    <li><a class="current" href="index.html"></a></li>
                     <li><a href="product.html">PRODUSE</a></li>
-                    <li><a href="cart.html">COS CUMPARATURI</a></li>
-                    <li><a href="admin.html">ADMIN</a></li>
+                    <li><a href="cart.html"><i class="fa fa-shopping-cart"></i> COS CUMPARATURI</a></li>
+                    <li><a href="admin.html"><i class="fa fa-lock"></i> ADMIN</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
@@ -36,17 +39,16 @@
             </span>
         </div>
     </nav>
-    <section class="home">
-
-        <div style="height: 1500px">
+    <section class="home" style="height:1600px">
+        <div>
             <!-- just to make scrolling effect possible -->
             <h2 class="myH4"><img src="products/maralogo.png"></h2>
             <p class="myP">Optica medicala Mara Optic pune accent pe servicii si produse de calitate, proptitudine si
                 corectitudine.</p>
             <p class="myP">Termenul de ochelari poate cuprinde o gama larga de produse. Dar primul gand la care ne
                 trimite
-                termenul este de ochelari de vedere ce reprezinta cadre alcatuite din <a
-                    href="lentile-ochelari.html">lentile ochelari</a> ce au diferite functii si particularitati si sunt
+                termenul este de ochelari de vedere ce reprezinta cadre alcatuite din <a href="product.html">lentile
+                    ochelari</a> ce au diferite functii si particularitati si sunt
                 purtati in fata ochilor. Istoria lor este una extrem de vasta, prima datare despre <b>ochelari</b> se
                 regaseste inca din secolul intai din partea unui apropiat al imparatului Roman Nero care a spus ca
                 "Literele
@@ -56,7 +58,7 @@
             <p class="myH4">PRODUSE </p>
             <p class="myP"> Cand discutam despre rame ochelari, acestea reprezinta cea mai importanta componenta
                 estetica a
-                unui <a href="ochelari.html">ochelar</a>, indiferent daca modelul este unul de dama sau barbatesc.</p>
+                unui <a href="product.html">ochelar</a>, indiferent daca modelul este unul de dama sau barbatesc.</p>
             <p class="myP">Compania noastra va pune la dispozitie diferite modele in functie de preferinte si gusturi.
                 Oferim <b>rame ochelari</b> din plastic , metal sau din titan pe diferite culori, nuante si accesorii.
                 Avem
@@ -89,9 +91,9 @@
     <footer class="footer" id="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-11">
                     <div class="emergency">
-                        <i class="icon-phone5"></i>
+                        <i class="fa fa-tty"></i>
                         <span class="text">Informatii si Programari telefonice</span>
                         <span class="number"><a href="tel:0761 941 313">0761 941 313</a></span>
                         <img src="products/emergency-divider.png" alt="programari telefonice real optic">
@@ -100,7 +102,7 @@
             </div>
             <div class="main-footer">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="useful-links">
                             <div class="title">
                                 <h5>Colaboratori</h5>
@@ -126,27 +128,26 @@
                             </div>
                             <div class="detail">
                                 <div class="get-touch">
-
                                     <ul>
-                                        <li> <span>Luni - Vineri: 09.00 - 21.00 </span>
-                                        </li>
+                                        <li><span>Luni - Vineri:</span></li>
+                                        <li><span>09.00 - 21.00 </span></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="get-touch">
                             <div class="title">
                                 <h5>Contactati-ne</h5>
                             </div>
                             <div class="detail">
                                 <div class="get-touch">
-
                                     <ul>
-                                        <li><i class="icon-location"></i> <span>Bulevardul Pandurilor, nr. 34,
-                                                Targu-Mures </span></li>
-                                        <li><i class="icon-phone4"></i> <span>0761 941 313</span></li>
+                                        <li><span> Bulevardul Pandurilor, nr.34
+                                            </span></li>
+                                        <li><span>Targu-Mures</span></li>
+                                        <li><i class="fa fa-tty"></i><span>0761 941 313</span></li>
                                     </ul>
                                 </div>
                             </div>
@@ -155,37 +156,65 @@
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <span class="copyrights">Copyright © 2020 Mara Optic. All right reserved.</span>
-                    </div>
+        <div class="footer-bottom" class="text-center text-white" style="background-color: #f1f1f1;">
+            <!-- Grid container -->
+            <div class="container pt-4">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- Facebook -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                        data-mdb-ripple-color="dark"><i class="fa fa-facebook-f"></i></a>
 
-                </div>
+                    <!-- Twitter -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                        data-mdb-ripple-color="dark"><i class="fa fa-twitter"></i></a>
+
+                    <!-- Google -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                        data-mdb-ripple-color="dark"><i class="fa fa-google"></i></a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                        data-mdb-ripple-color="dark"><i class="fa fa-instagram"></i></a>
+
+                    <!-- Linkedin -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                        data-mdb-ripple-color="dark"><i class="fa fa-linkedin"></i></a>
+                    <!-- Github -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                        data-mdb-ripple-color="dark"><i class="fa fa-github"></i></a>
+                </section>
+                <!-- Section: Social media -->
             </div>
-        </div>
-        </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2020 Copyright:
+                <a class="text-dark" href="">MARA OPTIC</a>
+            </div>
+            <!-- Copyright -->
+
     </footer>
 
     <!-- Jquery needed -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
     <!-- <script src="js/scripts.js"></script> -->
 
     <!-- Function used to shrink nav bar removing paddings and adding black background -->
     <script>
-        $(window).scroll(function () {
-            if ($(document).scrollTop() > 50) {
-                $('.nav').addClass('affix');
-                console.log("OK");
-            } else {
-                $('.nav').removeClass('affix');
-            }
-        });
-    </script>
+    //     $(window).scroll(function () {
+    //         if ($(document).scrollTop() > 50) {
+    //             $('.nav').addClass('affix');
+    //             console.log("OK");
+    //         } else {
+    //             $('.nav').removeClass('affix');
+    //         }
+    //     });
+    // </script>
 
 
-    <script src="src/app.js"></script>
+    <script src="src/app.js" type="module"></script>
 </body>
 
 </html>

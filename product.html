@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootswatch/dist/darkly/bootstrap.min.css">
     <link rel="stylesheet" href="src/style.css">
     <title>MARA OPTIC</title>
 </head>
@@ -14,21 +17,74 @@
     <nav class="nav">
         <div class="container">
             <div class="logo">
-                <a href="index.html" class="logo"><img src="products/maralogo.png" width="150px" height="80px"></a>
+                <a href="index.html" class="logo">MARA OPTIC</a>
             </div>
             <div id="mainListDiv" class="main_list">
                 <ul class="navlinks">
-                    <li><a href="index.html">SERVICII</a></li>
-                    <li><a href="product.html">PRODUCTS</a></li>
-                    <li><a href="cart.html">COS CUMPARATURI</a></li>
-                    <li><a href="admin.html">ADMIN</a></li>
+                    <li><a href="index.html"></a></li>
+                    <li><a class="current" href="product.html">PRODUSE</a></li>
+                    <li><a href="cart.html"><i class="fa fa-shopping-cart"></i> COS CUMPARATURI</a></li>
+                    <li><a href="admin.html"><i class="fa fa-lock"></i> ADMIN</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <script src="src/app.js"></script>
+    <div class="container products">
+        <h2 style="margin-top: 20px;">PRODUSE</h2>
+
+        <div class="card card-body card-form">
+
+            <div id="products" class="card-deck"> </div>
+        </div>
+
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-bottom" class="text-center text-white" style="background-color: #f1f1f1;">
+            <!-- Grid container -->
+            <div class="container pt-4">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- Facebook -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                        data-mdb-ripple-color="dark"><i class="fa fa-facebook-f"></i></a>
+
+                    <!-- Twitter -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                        data-mdb-ripple-color="dark"><i class="fa fa-twitter"></i></a>
+
+                    <!-- Google -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                        data-mdb-ripple-color="dark"><i class="fa fa-google"></i></a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                        data-mdb-ripple-color="dark"><i class="fa fa-instagram"></i></a>
+
+                    <!-- Linkedin -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                        data-mdb-ripple-color="dark"><i class="fa fa-linkedin"></i></a>
+                    <!-- Github -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                        data-mdb-ripple-color="dark"><i class="fa fa-github"></i></a>
+                </section>
+                <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2020 Copyright:
+                <a class="text-dark" href="">MARA OPTIC</a>
+            </div>
+            <!-- Copyright -->
+    </footer>
+
+    <script src=" src/app.js" type="module">
+    </script>
+    <!-- <script src="src/ui.js"></script> -->
 </body>
 
 </html>
