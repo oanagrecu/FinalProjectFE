@@ -31,8 +31,110 @@
             </div>
         </div>
     </nav>
-    <footer>
-        <div class="footer-bottom" class="text-center text-white" style="background-color: #f1f1f1;">
+
+    <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <!-- Include the above in your HEAD tag  -->
+
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+
+
+
+
+    <div id="shoppingCart" style="margin-top: 50px">
+        <div class="container mb-4">
+            <div class="row">
+                <div class="col-12">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col"> </th>
+                                    <th scope="col">Produse</th>
+                                    <th scope="col">In stoc</th>
+                                    <th scope="col" class="text-center">Cantitate</th>
+                                    <th scope="col" class="text-right">Pret</th>
+                                    <th> </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><img src="${product.image}" /> </td>
+                                    <td>${product.title}</td>
+                                    <td>${product.stoc}</td>
+                                    <td><input class="form-control" type="text" value="1" /></td>
+                                    <td class="text-right">${product.price} RON</td>
+                                    <td class="text-right"><button class="btn btn-sm btn-danger"><i
+                                                class="fa fa-trash"></i>
+                                        </button> </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="${product.image}" /> </td>
+                                    <td>${product.title}</td>
+                                    <td>${product.stoc}</td>
+                                    <td><input class="form-control" type="text" value="1" /></td>
+                                    <td class="text-right">${product.price} RON</td>
+                                    <td class="text-right"><button class="btn btn-sm btn-danger"><i
+                                                class="fa fa-trash"></i>
+                                        </button> </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="${product.image}" /> </td>
+                                    <td>${product.title}</td>
+                                    <td>${product.stoc}</td>
+                                    <td><input class="form-control" type="text" value="1" /></td>
+                                    <td class="text-right">${product.price} RON</td>
+                                    <td class="text-right"><button class="btn btn-sm btn-danger"><i
+                                                class="fa fa-trash"></i>
+                                        </button> </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Sub-Total</td>
+                                    <td class="text-right">.....</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Transport</td>
+                                    <td class="text-right">GRATUIT</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><strong>Total</strong></td>
+                                    <td class="text-right"><strong>....</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col mb-2">
+                    <div class="row">
+                        <div class="col-sm-12  col-md-6">
+                            <button class="btn btn-block btn-dark"><a href="product.html">Continua
+                                    Cumparaturile</a></button>
+                        </div>
+                        <div class="col-sm-12 col-md-6 text-right">
+                            <button class="btn btn-lg btn-block btn-success text-uppercase">Casa</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer style="margin-top: 100px;">
+        <div class="footer-bottom" class="text-center text-white" style="background-color: #bbc0f1;">
             <!-- Grid container -->
             <div class="container pt-4">
                 <!-- Section: Social media -->
@@ -71,7 +173,7 @@
             </div>
             <!-- Copyright -->
     </footer>
-    <script src="src/app.js" type="module"></script>
+    <script src="src/cart.js" type="module"></script>
 </body>
 
 </html>
