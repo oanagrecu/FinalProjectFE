@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootswatch/dist/darkly/bootstrap.min.css">
+    <link rel="stylesheet" href="src/style.css">
+    <title>New Product</title>
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="logo">MARA OPTIC</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <!-- <li><a href="admin.html" class="current">ADMIN</a></li> -->
+                    <!-- <li><a href="index.html"></a></li> -->
+                    <li><a href="cart.html"> COS CUMPARATURI</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="addPage">
+        <div class=" card card-body card-form">
+            <div id="introduction">
+                <h2 style="text-align:center;">ADAUGARE PRODUS</h2>
+                <a href="admin.html" id="add-product"> + SAVE</a>
+                <button class="btn btn-dark  btn-block">CANCEL</button>
+            </div>
+            <div id="informations" class="form-group">
+                <input type="text" id="title" class="form-control" placeholder="product-title" />
+            </div>
+            <div class="form-group">
+                <input type="text" id="image" class="form-control" placeholder="product-image" />
+            </div>
+
+            <div class="form-group">
+                <input type="text" id="price" class="form-control" placeholder="product-price" />
+            </div>
+            <div class="form-group">
+                <textarea type="text" id="description" class="form-control"
+                    placeholder="product-description"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="text" id="stoc" class="form-control" placeholder="product-stoc" />
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class="card">
+            <div class="card__title">
+                <div class="icon"><a href="product.html"><i class="fa fa-arrow-left"></i></a>
+                </div>
+                <h3>MARA OPTIC</h3>
+            </div>
+            <div class="card__body">
+                <div class="half">
+                    <div class="featured_text">
+                        <h1>OCHELARI</h1>
+                        <p class="sub">${product.title}</p>
+                        <p class="price">${product.price} RON</p>
+                    </div>
+                    <div class="image">
+                        <img src="${product.image}" alt="...">
+                    </div>
+                </div>
+                <div class="half">
+                    <div class="description">
+                        <p class="card-text">${product.description}</p>
+                    </div>
+                    <span class="stock"><i class="fa fa-pen"></i> In stoc: ${product.stoc} </span>
+                </div>
+            </div>
+            <div class="card__footer">
+                <div class="action">
+                    <button class="btn btn-primary stretched-link cart" id="${product.id}">Adauga in
+                        cos</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+
+
+    <script src="src/admin.js" type="module"></script>
+</body>
+
+</html>

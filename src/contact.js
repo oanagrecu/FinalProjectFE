@@ -57,7 +57,7 @@ formElem.addEventListener('submit', (e) => {
 	e.preventDefault();
 
 	let ui = new UI();
-	console.log(ui.allElementsAreValid);
+	// console.log(ui.allElementsAreValid);
 
 	if (firstNameElem.value === '') {
 		ui.showError(firstNameElem, 'First name required');
