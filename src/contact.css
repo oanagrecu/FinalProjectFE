@@ -4,24 +4,19 @@
 
 body {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	/* display: flex; */
-	/* align-items: center;
-	justify-content: center;
-	margin-top: 100px; */
 }
 
 .contact {
-	display: flex;
-	background-color: rgb(240, 245, 255);
+	width: 900px;
+	margin: auto;
+	background-color: #f0f5ff;
 	border-radius: 10px;
 	margin-top: 25px;
 	margin-bottom: 50px;
-	max-width: 100%;
 }
 
 h2 {
 	color: #5d5dbd;
-	/* text-align: center; */
 }
 
 .contact-form .form {
@@ -29,12 +24,12 @@ h2 {
 	flex-direction: column;
 	text-align: center;
 	padding: 20px;
-	/* max-width: 100%; */
 }
 
 .form-item {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	text-align: center;
 	margin: 25px;
 }
@@ -72,8 +67,8 @@ button:hover {
 	color: #115dd8;
 }
 
-.form-item.error input,
-.form-item.error textarea {
+.error input,
+.error textarea {
 	border-color: #e74c3c;
 	border-radius: 4px;
 }
@@ -84,21 +79,22 @@ button:hover {
 	border-radius: 4px;
 }
 
-.form-item small {
-	/* font-size: 15px; */
+small {
+	font-size: 20px;
 	visibility: hidden;
 }
 
-.form-item.error small {
+small {
 	visibility: hidden;
+	font-size: 15px;
 	color: #e74c3c;
 }
 
 p.success {
 	background-color: #2ecc71;
 	width: 100%;
-	/* color: white; */
+	color: white;
 	font-size: 18px;
-	/* text-align: center; */
+	text-align: center;
 	padding: 3px;
 }

@@ -1,25 +1,37 @@
 import { http } from './http.js';
 import { ui } from './ui.js';
-
+const id = window.location.search.split('=')[1];
 window.onload = () => {
-	const id = window.location.search.split('=')[1];
 	if (window.location.search !== '') {
-		//  console.log(id);
 		http
 			.get(`http://localhost:3000/products/` + id)
 			.then((data) => ui.showDetailPage(data));
+
+		addEventButton();
+		showInCart();
 	}
+	// document.querySelector('.addToCart').addEventListener('click', function (e) {
+	// 	addToCart(id);
+	//
+	// });
 };
 
-document.getElementById('details').addEventListener('click', addToCart);
+function addEventButton() {
+	const btn = document.getElementById('details');
 
-function addToCart(e) {
-	let product = [];
-	if (e.target.classList.contains('addToCart')) {
-		const id = e.target.id;
+	btn.addEventListener('click', function (e) {
+		addToCart(id);
+	});
+}
+function addToCart(id) {
+	const cart = JSON.parse(window.localStorage.getItem('cart'));
+	cart.push(id);
+	window.localStorage.setItem('cart', JSON.stringify(cart));
+	alert('Produsul a fost adaugat in cos!');
+	// ui.changeCartNum();
+}
 
-		//  localStorage.setItem('products', 'id');
-		localStorage.setItem('product', 'product');
-		// localStorage.setItem('data', JSON.stringify(product));
-	}
+function showInCart() {
+	const cartNum = document.getElementById('quantity').value;
+	console.log(cartNum);
 }

@@ -4,12 +4,14 @@ class UI {
 		this.detailsDiv = document.getElementById('details');
 		this.cartDiv = document.getElementById('shoppingCart');
 		this.tableProducts = document.getElementById('tableProducts');
-		this.adminPage = document.getElementById('adminPage');
+		this.cartTable = document.getElementById('cart-table-products');
+		this.tableRowCart = document.getElementById('table-row-cart');
 		this.title = document.getElementById('title');
 		this.price = document.getElementById('price');
 		this.image = document.getElementById('image');
 		this.description = document.getElementById('description');
 		this.stoc = document.getElementById('stoc');
+		this.cartItems = document.getElementById('cartItems');
 	}
 	showProducts(products) {
 		let output = '';
@@ -28,6 +30,7 @@ class UI {
    </div>
     `;
 			this.productsDiv.innerHTML = output;
+			ui.changeCartNum();
 		});
 	}
 
@@ -45,7 +48,7 @@ class UI {
 		                    <div class="featured_text">
 		                        <h3>MARA OPTIC</h3>
 		                        <p class="sub">${product.title}</p>
-		                        <p class="price">${product.price} RON</p>
+		                        <p class="product-price">${product.price} RON</p>
 		                    </div>
 		                    <div class="image">
 		                        <img src="${product.image}" alt="...">
@@ -58,7 +61,7 @@ class UI {
 		                    <span class="stock"><i class="fa fa-pen"></i> In stock: ${product.stoc} </span>
 		                    <div class="card__footer">
 		                        <div class="action">
-		                    <button id="${product.id}"  class="btn btn-primary stretched-link addToCart">Adauga in cos</></button>
+		                    <button id="${product.id}"  class="bag-btn btn-primary stretched-link addToCart" type="button">Adauga in cos</></button>
 
 		                    </div>
 		                </div>
@@ -67,62 +70,60 @@ class UI {
 		    `;
 
 		this.detailsDiv.innerHTML = output;
+		ui.changeCartNum();
 	}
-
 	showAdminPage(products) {
 		let output = '';
 		products.forEach((product) => {
 			output += `
-                 
                     <tr>
-                        <td><img src="${product.image}"/></td>
+                        <td><img src="${product.image}" height=80px, width=80px /></td>
                         <td>${product.title}</td>
                         <td>${product.price}</td>
                         <td>${product.stoc}</td>
-                        <td><button id=${product.id} type="button" class="btn btn-sm btn-danger">
+                        <td class="text-right"><button id=${product.id} type="button" class="btn btn-sm btn-danger">
                         <i class="fa fa-trash"></i></button> </td>
                     </tr>
-            
 		 `;
-			this.adminPage.innerHTML = output;
+			this.tableProducts.innerHTML = output;
+			ui.changeCartNum();
 		});
 	}
-
-	showCartPage(products) {
+	showProductsInCart(products) {
+		const cart = JSON.parse(window.localStorage.getItem('cart'));
 		let output = '';
-		// const productsIdArr = JSON.parse(localStorage.getItem('shoppingCart'));
-		// console.log(productsIdArr);
-		// let productId = '';
-		// for (let i = 0; i <= productsIdArr.length - 1; i++) {
-		// 	productId = productsIdArr[i];
-		// 	console.log(productId);
-		// }
-		products.forEach((product) => {
-			if (productId === productId) {
-				output += `
-                            <tbody>
-                                <tr>
-                                    <td><img src="${product.image}"/></td>
-                                    <td>${product.title}</td>
-                                    <td>${product.stoc}</td>
-                                    <td><input class="form-control" type="text" value="1" /></td>
-                                    <td class="text-right">${product.price} RON</td>
-                                    <td class="text-right"><button class="btn btn-sm btn-danger"><i
-                                                class="fa fa-trash"></i>
-                                        </button> </td>
-                                </tr>
-                                <tr>  
-                                    <td><strong>Total</strong></td>
-                                    <td class="text-right"><strong>....</strong></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div> 
+		let productId = '';
+
+		for (let i = 0; i <= cart.length - 1; i++) {
+			productId = cart[i];
+			products.forEach((product) => {
+				if (productId == product.id) {
+					output += `
+					<tbody class="cart-table" id="cart-table-products">
+					<tr class="table-row-cart">
+					<td><img src="${product.image}"height=42px, width=42px /></td>
+					<td> <a href="details.html?id=${product.id}"> ${product.title}</a></td>
+					<td id="stoc">${product.stoc}</td>
+					<td><input class="form-control quantity-input" type="number" min="1" max=${product.stoc} value=""></></td>
+					<td class="product-price text-right ">${product.price} RON</td>
+					<td class="text-right" id="subtotal">RON</td>
+					<td class="text-right"><button class="btn btn-sm btn-danger" id="${product.id}"><i
+								class="fa fa-trash"></i>
+						</button> </td>
+				</tr>
+				</tbody>
 				`;
-				this.cartDiv.innerHTML = output;
-			}
-		});
+				}
+				this.cartTable.innerHTML = output;
+			});
+		}
+	}
+	changeCartNum() {
+		const cart = JSON.parse(localStorage.getItem('cart'));
+		let counter = 0;
+		for (let i = 0; i < cart.length + 1; i++) {
+			this.cartItems.innerHTML = counter++;
+		}
 	}
 }
 
