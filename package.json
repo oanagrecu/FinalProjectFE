@@ -30,5 +30,7 @@
     "font-awesome": "^4.7.0",
     "json-server": "^0.17.2",
     "serve": "^14.2.0"
+    "json-server": "^0.17.3",
+    "serve": "^14.2.0"
   }
 }

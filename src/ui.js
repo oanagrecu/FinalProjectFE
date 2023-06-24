@@ -101,10 +101,10 @@ class UI {
         if (productId == product.id) {
           output += `
           <tr class="table-row-cart">
-					<td><img src="${product.image}"height=42px, width=42px /></td>
+					<td><img src="${product.image}" height=42px, width=42px/></td>
 					<td> <a href="details.html?id=${product.id}"> ${product.title}</a></td>
 					<td id="stoc">${product.stoc}</td>
-					<td><input class="form-control quantity-input" type="number" min="1" max=${product.stoc} value=""></></td>
+					<td><input class="form-control quantity-input" type="number" min="1" max="${product.stoc}" value=""></></td>
 					<td class="product-price text-right ">${product.price} RON</td>
 					<td class="text-right" id="subtotal">RON</td>
 					<td class="text-right"><button class="btn btn-sm btn-danger" id="${product.id}"><i

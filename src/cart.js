@@ -45,20 +45,6 @@ function cartTotal() {
   cartTotalElement.innerText = total + ' RON';
 }
 
-
-// function cartTotal() {
-//   let cartContainer = document.querySelectorAll('.cart-table')[0];
-//   let cartRows = cartContainer.querySelectorAll('.table-row-cart');
-//   for (let i= 1 ;  i<cartContainer.length; i++) {
-//   let productPrice =document.getElementsByClassName('product-price')[0];
-//   let productQuantity = document.getElementsByClassName('quantity-input')[0];
-//    let subtotal = document.getElementById('subtotal');
-//   let price = parseFloat(productPrice.innerText.replace('RON', ''));
-//     var quantity = productQuantity.value;
-//     total = price * quantity;
-
-//     
-//     subtotal.innerText = total + '' + 'RON';
-//   }
-
-// }
+document
+	.getElementById('cart-table-products')
+	.addEventListener('click', deleteProductInCart);
