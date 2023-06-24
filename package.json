@@ -1,5 +1,5 @@
 {
-  "name": "finalprojectfe",
+  "name": "finalprojectFE",
   "version": "1.0.0",
   "description": "Final Project | E-commerce ",
   "main": "index.js",
@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:oanagrecu/FinalProjectFE.git"
+    "url": "git+https://github.com/oanagrecu/FinalProjectFE.git"
   },
   "keywords": [
     "FrontEnd",
-    "|HTML",
-    "|JavaScript",
+    "|Scoala",
+    "Informala",
     "|"
   ],
   "author": "Grecu Oana",
@@ -22,14 +22,13 @@
   "bugs": {
     "url": "https://github.com/oanagrecu/FinalProjectFE/issues"
   },
-  "homepage": "git@github.com:oanagrecu/FinalProjectFE.git",
+  "homepage": "https://github.com/oanagrecu/FinalProjectFE#readme",
   "dependencies": {
-    "animate.css": "4.1.1",
-    "bootstrap": "4.6.0",
-    "bootswatch": "4.6.0",
-    "font-awesome": "4.7.0",
-    "json-server": "0.17.2",
-    "serve": "14.2.0",  
-   
+    "animate.css": "^4.1.1",
+    "bootstrap": "^4.6.0",
+    "bootswatch": "^4.6.0",
+    "font-awesome": "^4.7.0",
+    "json-server": "^0.16.3",
+    "serve": "^11.3.2"
   }
 }

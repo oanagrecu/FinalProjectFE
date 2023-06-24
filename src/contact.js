@@ -1,5 +1,3 @@
-import { ui } from './ui.js';
-
 const formElem = document.getElementById('form');
 const firstNameElem = document.getElementById('first-name');
 const lastNameElem = document.getElementById('last-name');
@@ -87,6 +85,4 @@ formElem.addEventListener('submit', (e) => {
 
 	ui.showSubmitSuccessMessage();
 	ui.clearFields();
-	
 });
-ui.changeCartNum();

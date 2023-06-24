@@ -1,22 +1,22 @@
 class UI {
-  constructor() {
-    this.productsDiv = document.getElementById('products');
-    this.detailsDiv = document.getElementById('details');
-    this.cartDiv = document.getElementById('shoppingCart');
-    this.tableProducts = document.getElementById('tableProducts');
-    this.cartTable = document.getElementById('cart-table-products');
-    this.tableRowCart = document.getElementById('table-row-cart');
-    this.title = document.getElementById('title');
-    this.price = document.getElementById('price');
-    this.image = document.getElementById('image');
-    this.description = document.getElementById('description');
-    this.stoc = document.getElementById('stoc');
-    this.cartItems = document.getElementById('cartItems');
-  }
-  showProducts(products) {
-    let output = '';
-    products.forEach(product => {
-      output += `
+	constructor() {
+		this.productsDiv = document.getElementById('products');
+		this.detailsDiv = document.getElementById('details');
+		this.cartDiv = document.getElementById('shoppingCart');
+		this.tableProducts = document.getElementById('tableProducts');
+		this.cartTable = document.getElementById('cart-table-products');
+		this.tableRowCart = document.getElementById('table-row-cart');
+		this.title = document.getElementById('title');
+		this.price = document.getElementById('price');
+		this.image = document.getElementById('image');
+		this.description = document.getElementById('description');
+		this.stoc = document.getElementById('stoc');
+		this.cartItems = document.getElementById('cartItems');
+	}
+	showProducts(products) {
+		let output = '';
+		products.forEach((product) => {
+			output += `
 	<div class="card-deck ">	
 	<div class="card m-4 text-center" style="width:18em;">
 	<div class="card-body">
@@ -29,14 +29,14 @@ class UI {
    </div>
    </div>
     `;
-      this.productsDiv.innerHTML = output;
-      ui.changeCartNum();
-    });
-  }
+			this.productsDiv.innerHTML = output;
+			ui.changeCartNum();
+		});
+	}
 
-  showDetailPage(product) {
-    let output = '';
-    output = `
+	showDetailPage(product) {
+		let output = '';
+		output = `
 		         <div class="card" id="detailsCard">
 		            <div class="card__title">
 		                <div class="icon"><a href="product.html"><i class="fa fa-arrow-left"></i></a>
@@ -69,13 +69,13 @@ class UI {
 		        </div>
 		    `;
 
-    this.detailsDiv.innerHTML = output;
-    ui.changeCartNum();
-  }
-  showAdminPage(products) {
-    let output = '';
-    products.forEach(product => {
-      output += `
+		this.detailsDiv.innerHTML = output;
+		ui.changeCartNum();
+	}
+	showAdminPage(products) {
+		let output = '';
+		products.forEach((product) => {
+			output += `
                     <tr>
                         <td><img src="${product.image}" height=80px, width=80px /></td>
                         <td>${product.title}</td>
@@ -85,46 +85,46 @@ class UI {
                         <i class="fa fa-trash"></i></button> </td>
                     </tr>
 		 `;
-      this.tableProducts.innerHTML = output;
-      ui.changeCartNum();
-    });
-  }
-  showProductsInCart(products) {
-    const cart = JSON.parse(window.localStorage.getItem('cart'));
-    let output = '';
-    let productId = '';
+			this.tableProducts.innerHTML = output;
+			ui.changeCartNum();
+		});
+	}
+	showProductsInCart(products) {
+		const cart = JSON.parse(window.localStorage.getItem('cart'));
+		let output = '';
+		let productId = '';
 
-    for (let i = 0; i <= cart.length - 1; i++) {
-      productId = cart[i];
-      console.log(productId);
-      products.forEach(product => {
-        if (productId == product.id) {
-          output += `
-          <tr class="table-row-cart">
-					<td><img src="${product.image}" height=42px, width=42px/></td>
+		for (let i = 0; i <= cart.length - 1; i++) {
+			productId = cart[i];
+			products.forEach((product) => {
+				if (productId == product.id) {
+					output += `
+					<tbody class="cart-table" id="cart-table-products">
+					<tr class="table-row-cart">
+					<td><img src="${product.image}"height=42px, width=42px /></td>
 					<td> <a href="details.html?id=${product.id}"> ${product.title}</a></td>
 					<td id="stoc">${product.stoc}</td>
-					<td><input class="form-control quantity-input" type="number" min="1" max="${product.stoc}" value=""></></td>
+					<td><input class="form-control quantity-input" type="number" min="1" max=${product.stoc} value=""></></td>
 					<td class="product-price text-right ">${product.price} RON</td>
 					<td class="text-right" id="subtotal">RON</td>
 					<td class="text-right"><button class="btn btn-sm btn-danger" id="${product.id}"><i
 								class="fa fa-trash"></i>
 						</button> </td>
 				</tr>
+				</tbody>
 				`;
-        }
-        this.cartTable.innerHTML = output;
-        ui.changeCartNum();
-      });
-    }
-  }
-  changeCartNum() {
-    const cart = JSON.parse(localStorage.getItem('cart'));
-    let counter = 0;
-    for (let i = 0; i < cart.length + 1; i++) {
-      this.cartItems.innerHTML = counter++;
-    }
-  }
+				}
+				this.cartTable.innerHTML = output;
+			});
+		}
+	}
+	changeCartNum() {
+		const cart = JSON.parse(localStorage.getItem('cart'));
+		let counter = 0;
+		for (let i = 0; i < cart.length + 1; i++) {
+			this.cartItems.innerHTML = counter++;
+		}
+	}
 }
 
 export const ui = new UI();

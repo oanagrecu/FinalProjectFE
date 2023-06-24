@@ -37,6 +37,15 @@
       "stoc": 10
     },
     {
+      "id": 5,
+      "title": "Optix 17",
+      "price": 240,
+      "description": "Model barbatesc, fabricat in Germania din titan.",
+      "category": "rama ochelari",
+      "image": "products/ochelari5.jpg",
+      "stoc": 10
+    },
+    {
       "id": 6,
       "title": "Optix 4",
       "price": 240,

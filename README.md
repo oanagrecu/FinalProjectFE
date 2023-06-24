@@ -1,4 +1,4 @@
-npm ininp# FinalProjectFE
+# FinalProjectFE
 
 Online ecommerce platform
 
