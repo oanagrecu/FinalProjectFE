@@ -1,4 +1,4 @@
-# FinalProjectFE
+npm ininp# FinalProjectFE
 
 Online ecommerce platform
 
@@ -22,3 +22,8 @@ Grecu Oana
 ### Start Json Server
 
 `$ json-server --watch db.json`
+
+### Using DataBase
+
+`$ npm run start-db`
+`$ npm run start`

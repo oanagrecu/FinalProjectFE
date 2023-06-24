@@ -8,6 +8,7 @@ body {
 }
 
 .card {
+	margin-top: 100px;
 	max-width: 900px;
 	margin: 1% auto;
 }
@@ -136,10 +137,10 @@ body {
 	align-items: center;
 	position: relative;
 }
-/* .card__footer ::before {
+.card__footer ::before {
 	content: '';
 	position: absolute;
-	display: block;
+	/* display: block; */
 	top: 0;
 	left: 40px;
 	width: calc(100% - 40px);
@@ -152,9 +153,8 @@ body {
 		#ddd 20%,
 		#ddd 100%
 	);
-} */
-
-.card__footer .action button {
+}
+.action button {
 	cursor: pointer;
 	border: 1px solid #115dd8;
 	padding: 14px 30px;
@@ -165,7 +165,23 @@ body {
 	font-size: 16px;
 	transition: 200ms;
 }
-.card__footer.action button:hover {
+.action button:hover {
 	background: #fff;
 	color: #115dd8;
+}
+.nav-icon {
+	font-size: 2rem;
+}
+.cart-btn {
+	position: relative;
+	cursor: pointer;
+}
+.cart-items {
+	position: absolute;
+	top: -8px;
+	right: -8px;
+	background: var(--primaryColor);
+	padding: 0 5px;
+	border-radius: 30%;
+	color: var(--mainWhite);
 }

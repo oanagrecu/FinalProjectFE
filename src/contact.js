@@ -1,11 +1,10 @@
+import { ui } from './ui.js';
+
 const formElem = document.getElementById('form');
 const firstNameElem = document.getElementById('first-name');
 const lastNameElem = document.getElementById('last-name');
 const emailNameElem = document.getElementById('email');
 const messageElem = document.getElementById('message');
-
-// check elems
-// console.log(firstNameElem, lastNameElem, emailNameElem, messageElem, formElem);
 
 class UI {
 	constructor() {
@@ -15,7 +14,7 @@ class UI {
 
 	showError(elem, message) {
 		elem.parentElement.classList.add('error');
-		const smallElem = elem.parentElement.querySelector('small');
+		const smallElem = elem.parentElement.getElementsByTagName('small');
 		smallElem.innerHTML = message;
 	}
 
@@ -57,7 +56,6 @@ formElem.addEventListener('submit', (e) => {
 	e.preventDefault();
 
 	let ui = new UI();
-	// console.log(ui.allElementsAreValid);
 
 	if (firstNameElem.value === '') {
 		ui.showError(firstNameElem, 'First name required');
@@ -89,4 +87,6 @@ formElem.addEventListener('submit', (e) => {
 
 	ui.showSubmitSuccessMessage();
 	ui.clearFields();
+	
 });
+ui.changeCartNum();

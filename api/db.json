@@ -37,15 +37,6 @@
       "stoc": 10
     },
     {
-      "id": 5,
-      "title": "Optix 17",
-      "price": 240,
-      "description": "Model barbatesc, fabricat in Germania din titan.",
-      "category": "rama ochelari",
-      "image": "products/ochelari5.jpg",
-      "stoc": 10
-    },
-    {
       "id": 6,
       "title": "Optix 4",
       "price": 240,
@@ -326,7 +317,7 @@
     },
     {
       "id": 37,
-      "title": "essilor",
+      "title": "Essilor",
       "price": 150,
       "description": "Rame din acetat, lentile polarizate, create in Elvetia. Produse moderne, elegante pentru protetia ochilor.",
       "category": "ochelari de soare",
@@ -350,41 +341,6 @@
       "category": "ochelari de soare",
       "image": "products/soare10.jpg",
       "stoc": 15
-    },
-    {
-      "title": "osddff",
-      "price": "450",
-      "image": "products/glasses.jpg",
-      "description": " made in Germany",
-      "id": 40
-    },
-    {
-      "title": "osddff",
-      "price": "",
-      "image": "",
-      "description": "",
-      "id": 41
-    },
-    {
-      "title": "",
-      "price": "",
-      "image": "",
-      "description": "",
-      "id": 42
-    },
-    {
-      "title": "",
-      "price": "",
-      "image": "",
-      "description": "",
-      "id": 43
-    },
-    {
-      "image": "",
-      "title": "",
-      "price": "",
-      "stoc": "",
-      "id": 44
     }
   ]
 }
