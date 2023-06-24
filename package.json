@@ -13,8 +13,8 @@
   },
   "keywords": [
     "FrontEnd",
-    "|Scoala",
-    "Informala",
+    "|HTML",
+    "|JavaScript",
     "|"
   ],
   "author": "Grecu Oana",
@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/oanagrecu/FinalProjectFE/issues"
   },
-  "homepage": "https://github.com/oanagrecu/FinalProjectFE#readme",
+  "homepage": "git@github.com:oanagrecu/FinalProjectFE.git",
   "dependencies": {
     "animate.css": "4.1.1",
     "bootstrap": "4.6.0",
