@@ -2,7 +2,7 @@
   "name": "finalprojectFE",
   "version": "1.0.0",
   "description": "Final Project | E-commerce ",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start-db": "json-server --watch api/db.json",
     "start": "serve"
