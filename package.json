@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oanagrecu/FinalProjectFE.git"
+    "url": "https://github.com/oanagrecu/FinalProjectFE.git"
   },
   "keywords": [
     "FrontEnd",
@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/oanagrecu/FinalProjectFE/issues"
   },
-  "homepage": "https://github.com/oanagrecu/FinalProjectFE#readme",
+  "homepage": "https://github.com/oanagrecu/FinalProjectFE",
   "dependencies": {
     "animate.css": "^4.1.1",
     "bootstrap": "^4.6.0",
