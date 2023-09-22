@@ -44,3 +44,4 @@ function cartTotal() {
   let cartTotalElement = document.querySelector("#totalPrice");
   cartTotalElement.innerText = total + " RON";
 }
+ui.changeCartNum();

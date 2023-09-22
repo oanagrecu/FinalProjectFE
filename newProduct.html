@@ -1,64 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./node_modules/bootswatch/dist/darkly/bootstrap.min.css">
-    <link rel="stylesheet" href="src/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootswatch/dist/darkly/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="src/style.css" />
     <title>New Product</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <nav class="nav">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html" class="logo">MARA OPTIC</a>
-            </div>
-            <div id="mainListDiv" class="main_list">
-                <ul class="navlinks">
-
-                    <li><a href="cart.html"> COS CUMPARATURI</a></li>
-                </ul>
-            </div>
-        </div>
+      <div class="logo">
+        <a href="index.html" class="logo">MARA OPTIC</a>
+      </div>
+      <div id="mainListDiv" class="main_list">
+        <ul class="navlinks">
+          <li><a href="cart.html"> COS CUMPARATURI</a></li>
+        </ul>
+      </div>
     </nav>
-
     <div id="addPage">
-        <div class=" card card-body card-form">
-            <div id="introduction">
-                <h2 style="text-align:center;"><a href="admin.html"> ADAUGARE PRODUS</a></h2>
-                <button id="add-product" class="btn btn-dark btn-secondary btn-block">
-                    SALVEAZA</button>
-                <button class="btn btn-dark btn-secondary btn-block">ANULEAZA</button>
-            </div>
-            <div id="informations" class="form-group">
-                <input type="text" id="title" class="form-control" placeholder="product-title" />
-            </div>
-            <div class="form-group">
-                <input type="text" id="image" class="form-control" placeholder="product-image" />
-            </div>
-
-            <div class="form-group">
-                <input type="text" id="price" class="form-control" placeholder="product-price" />
-            </div>
-            <div class="form-group">
-                <textarea type="text" id="description" class="form-control"
-                    placeholder="product-description"></textarea>
-            </div>
-            <div class="form-group">
-                <input type="text" id="stoc" class="form-control" placeholder="product-stoc" />
-            </div>
+      <div class="card card-body card-form">
+        <div id="introduction">
+          <h2 style="text-align: center">
+            <a href="admin.html"> ADAUGARE PRODUS</a>
+          </h2>
+          <button id="add-product" class="btn btn-dark btn-secondary btn-block">
+            SALVEAZA
+          </button>
+          <button class="btn btn-dark btn-secondary btn-block">ANULEAZA</button>
         </div>
+        <div id="informations" class="form-group">
+          <input
+            type="text"
+            id="title"
+            class="form-control"
+            placeholder="product-title"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            id="image"
+            class="form-control"
+            placeholder="product-image"
+          />
+        </div>
+
+        <div class="form-group">
+          <input
+            type="text"
+            id="price"
+            class="form-control"
+            placeholder="product-price"
+          />
+        </div>
+        <div class="form-group">
+          <textarea
+            type="text"
+            id="description"
+            class="form-control"
+            placeholder="product-description"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            id="stoc"
+            class="form-control"
+            placeholder="product-stoc"
+          />
+        </div>
+      </div>
     </div>
 
     <script src="src/app.js" type="module"></script>
     <script src="src/admin.js" type="module"></script>
-
-</body>
-
+  </body>
 </html>
